@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .form-element {
+        margin: 5px 0;
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .form-element input,
+      select,
+      textarea {
+        padding: 7px 12px;
+        width: 250px;
+      }
+
+      .form-element input[type="checkbox"],
+      .form-element input[type="radio"] {
+        padding: 4px;
+        width: 20px;
+      }
+
+      .form-element input[type="submit"],
+      .form-element input[type="reset"],
+      button {
+        padding: 8px 10px;
+        width: 150px;
+        background-color: teal;
+        color: white;
+        border: none;
+        margin-right: 5px;
+        outline: none;
+      }
+
+      .form-element label {
+        position: relative;
+        min-width: 150px;
+      }
+
+      .form-element div label {
+        position: relative;
+        min-width: max-content;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Register Form:</legend>
+        <div class="form-element username">
+          <label for="userName">User Name: </label>
+          <input type="text" placeholder="Enter your username..." id="userName" name="uName" disabled
+            value="My User Name">
+        </div>
+        <div class="form-element surname">
+          <label for="surname">Surname: </label>
+          <input type="text" placeholder="Enter your surname..." id="surname" name="uName" minlength="10" maxlength="15"
+            required pattern="^[a-zA-Z0-9]*">
+        </div>
+        <div class="form-element email">
+          <label for="email">Email: </label>
+          <input type="email" placeholder="Enter your email..." id="email" name="mail">
+        </div>
+        <div class="form-element password">
+          <label for="password">Password: </label>
+          <input type="password" placeholder="Enter your password..." id="password" name="pass">
+        </div>
+        <div class="form-element date">
+          <label for="date">Registered Date: </label>
+          <input type="datetime-local" placeholder="Enter your DOB..." id="date" name="reg">
+        </div>
+        <div class="form-element age">
+          <label for="age">Age: </label>
+          <input type="number" placeholder="Enter your age..." id="age" name="myAge" min="18" max="60" step="4">
+        </div>
+        <div class="form-element search">
+          <label for="search">Search: </label>
+          <input type="search" placeholder="Enter your search..." id="search" name="searchtext">
+        </div>
+        <div class="form-element resume">
+          <label for="resume">Resume: </label>
+          <input type="file" placeholder="Enter your resume..." id="resume" name="resume">
+        </div>
+        <div class="form-element Gender">
+          <label>Gender: </label>
+          <div>
+            <label for="male">Male: </label>
+            <input type="radio" id="male" value="male" name="gender">
+            <label for="female">Female: </label>
+            <input type="radio" id="female" value="female" name="gender">
+          </div>
+        </div>
+        <div class="form-element lang">
+          <label>Languages Known: </label>
+          <div>
+            <label for="tel">Telugu: </label>
+            <input type="checkbox" id="tel" value="tel" name="lang">
+            <label for="eng">English: </label>
+            <input type="checkbox" id="eng" value="eng" name="lang">
+            <label for="hin">Hindi: </label>
+            <input type="checkbox" id="hin" value="hin" name="lang">
+          </div>
+        </div>
+        <div class="form-element country">
+          <label for="country">Select your country: </label>
+          <select id="country" name="country">
+            <option value="">Select Country</option>
+            <option value="ind">India</option>
+            <option value="eng">England</option>
+            <option value="rsa">Russia</option>
+          </select>
+        </div>
+        <div class="form-element message">
+          <label for="bio">Bio: </label>
+          <textarea placeholder="Enter your bio..." name="bioo"></textarea>
+        </div>
+
+        <div class="form-element buttons">
+          <input type="reset">
+          <input type="submit" value="Register">
+          <button>Reg</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
