@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - colors</title>
+    <style>
+      h2 {
+        /* names */
+        color: coral;
+        padding: 10px;
+        /* border-top-style: solid;
+        border-top-color: green;
+        border-top-width: 2px; */
+
+        /* border-right-width: 2px;
+        border-right-style: solid;
+        border-right-color: green; */
+
+        /* border-bottom-width: 2px;
+        border-bottom-style: solid;
+        border-bottom-color: green; */
+
+        /* border-left-width: 2px;
+        border-left-style: solid;
+        border-left-color: green; */
+
+        /* border-top: 2px solid green;
+        border-bottom: 2px solid green;
+        border-left: 2px solid green;
+        border-right: 2px solid green; */
+        border: 2px solid green;
+        border-bottom: 2px dashed red;
+        border-radius: 50%;
+      }
+
+      h3 {
+        /* hexa decimal */
+        /* #rrggbb,  00 to ff */
+        background-color: #000000;
+        color: #ffffff76;
+        /* color: #ff0000; red */
+        /* color: #00ff00; green */
+        /* color: #0000ff; blue */
+        padding: 20px;
+        /* top/bottom/left/right */
+        margin: 50px 0;
+        /* top/bottm left/right */
+        /* margin: 50px 0 10px; top left/right bottom  */
+        /* margin: 50px 20px 10px 30px;  top right bottm left */
+      }
+
+      h4 {
+        /* rgb(red, green, blue), 0 to 255 */
+        background-color: rgba(255, 0, 0, 0.722);
+        color: rgb(192, 185, 185);
+      }
+
+      h5 {
+        color: hsl(360, 100%, 100%);
+        background-color: hsla(0, 100%, 50%, 0.6);
+      }
+
+      .hero-banner {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 0, 0.568);
+        border: 2px solid;
+        background-image: url(../images/hero-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      input {
+        padding: 7px 15px;
+        width: 300px;
+        background: rgb(233, 233, 164) url(../images/search-icon.png) no-repeat 97% center;
+        background-size: 15px;
+        /* background-image: url(../images/search-icon.png);
+        background-repeat: no-repeat;
+        background-position: 97% center; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Hi, This is colors section</h2>
+    <h3>Hi, This is colors section</h3>
+    <h4>Hi, This is colors section</h4>
+    <h5>Hi, This is colors section</h5>
+    <br>
+    <input type="text" placeholder="Search....">
+    <br>
+    <br>
+    <div class="hero-banner"></div>
+
+  </body>
+
+</html>
