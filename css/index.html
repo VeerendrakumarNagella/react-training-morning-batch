@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .container {
+        border: 1px solid;
+        height: 200px;
+        overflow: auto;
+      }
+
+      .float-container {
+        margin: 20px 0;
+        border: 1px solid;
+        padding: 5px;
+        height: 200px;
+        clear: both;
+      }
+
+      .float-container div {
+        height: 100%;
+        border: 1px solid red;
+        float: left;
+        width: 33%;
+        padding: 10px;
+        margin-right: 0.5%;
+      }
+
+      .float-container>div {
+        padding: 0;
+        border-color: blue;
+      }
+
+      .float-container div:last-child {
+        margin-right: 0;
+      }
+
+      button {
+        padding: 7px 13px;
+        color: white;
+        background-color: tomato;
+        border: none;
+      }
+
+      .float-items {
+        border: 1px solid;
+        /* display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse; */
+      }
+
+      .float-items button {
+        float: left;
+      }
+
+      h2 {
+        clear: both;
+      }
+
+      .btn-right~button {
+        background-color: lightcoral;
+      }
+
+      .items-container {
+        margin: 30px 0;
+        border: 1px solid;
+        width: max-content;
+        padding: 10px;
+      }
+
+      .items-container button {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .items-container button:first-child {
+        background-color: teal;
+      }
+
+      .items-container button:hover {
+        cursor: pointer;
+        background-color: yellowgreen;
+      }
+
+
+      .items-container button:last-child {
+        margin-right: 0;
+      }
+
+      .overlay-container {
+        margin: 30px 0;
+        border: 1px solid;
+        height: 300px;
+        position: relative;
+      }
+
+      /* .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        left: 0;
+        top: 0;
+        content: "";
+      } */
+
+      /* .overlay-container::before {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.4;
+        left: 0;
+        top: 0;
+        content: "";
+      } */
+
+      .overlay-container::after {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.6;
+        left: 0;
+        top: 0;
+        content: "";
+      }
+
+      .overlay-container h2 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: white;
+        z-index: 1;
+        /* If psuedo element is after then we need to take the z-index more than element */
+      }
+
+      .overlay-container img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="overlay-container">
+      <div class="overlay"></div>
+      <h2>Hello world</h2>
+      <img src="../images/hero-banner.jpg" alt="">
+    </div>
+    <div class="container">
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+      <pre>
+      Examples in Each Chapter
+      This CSS tutorial contains hundreds of CSS examples.
+      
+      With our online editor, you can edit the CSS, and click on a button to view the result.
+    </pre>
+    </div>
+    <div class="float-container">
+      <div>
+        <div>hello</div>
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="float-items">
+      <button>Float Left</button>
+      <button class="btn-right">Float Right</button>
+      <button>Float Left1</button>
+      <button>Float Left2</button>
+      <button>Float Left3</button>
+    </div>
+    <h2> Next context here </h2>
+    <div class="items-container">
+      <button>Click 1</button>
+      <button>Click 2</button>
+      <button>Click 3</button>
+    </div>
+
+  </body>
+
+</html>
