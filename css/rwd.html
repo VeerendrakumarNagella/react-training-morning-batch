@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .float-container {
+        margin: 20px 0;
+        border: 2px solid;
+        padding: 5px;
+        display: flex;
+      }
+
+      .float-container div {
+        height: 100%;
+        border: 2px solid red;
+        width: 33%;
+        padding: 10px;
+        height: 200px;
+        margin: 0 3px;
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .float-container div {
+          border-color: green;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        .float-container {
+          flex-direction: column;
+        }
+
+        .float-container div {
+          width: 100%;
+          margin: 3px 0;
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="float-container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+  </body>
+
+</html>
