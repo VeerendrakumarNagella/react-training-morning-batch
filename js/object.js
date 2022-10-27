@@ -48,3 +48,15 @@ console.log(
   userDetails["email"],
   userDetails.fullName("Hyderabad")
 );
+
+//
+
+const obj = {
+  name: "siva",
+  age: 24,
+  address: {
+    street: "Gachibowli",
+    state: "Telangana",
+  },
+};
+console.log(obj.name, obj.address.street);

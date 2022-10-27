@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <title>Row Layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header,
+      footer {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: teal;
+        color: white;
+        font-size: 18px;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .container .main-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: stretch;
+        padding: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .container .main-content>div {
+        flex-grow: inherit;
+        margin: 10px;
+        box-shadow: 0px 1px 15px 2px #9d9191;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+        min-height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>Header Section</header>
+      <div class="main-content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <footer>Footer Section</footer>
+    </div>
+  </body>
+
+</html>
