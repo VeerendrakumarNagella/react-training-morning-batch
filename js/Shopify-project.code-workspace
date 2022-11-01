@@ -1,0 +1,10 @@
+{
+  "folders": [
+	{
+		"path": "../../Shopify-project"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "react-training-morning-batch"
+  }
+}

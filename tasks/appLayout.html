@@ -69,13 +69,13 @@
         margin: 20px;
       }
 
-
       .side-nav {
         width: 50px;
         transition: ease-in 150ms;
         position: fixed;
         top: 0;
         height: 100vh;
+        margin-top: 50px;
         overflow: auto;
         background-color: white;
         box-shadow: 1px 0 7px -1px #888;
@@ -159,6 +159,18 @@
         <footer>Footer Section</footer>
       </div>
     </div>
+
+    <script>
+      const isPalindromeValidate = (str) => {
+        if (str.charAt(0) !== str.charAt(str.length - 1)) {
+          return false
+        }
+        return str === str.split("").reverse().join("");
+      }
+      console.log(isPalindromeValidate("racecar"))
+      console.log(isPalindromeValidate("racecara"))
+      console.log(isPalindromeValidate("abcba"))
+    </script>
   </body>
 
 </html>

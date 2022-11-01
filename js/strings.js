@@ -9,6 +9,9 @@ const nameConventionChange = (name) => {
   return name.trim().toLowerCase();
 };
 
+console.log("My name is " + fullName + " and coming from Hyderabad");
+console.log(`My name is ${fullName} and coming from Hyderabad`);
+
 console.log(nameConventionChange(name1));
 console.log(nameConventionChange(name2));
 

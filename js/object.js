@@ -58,5 +58,17 @@ const obj = {
     street: "Gachibowli",
     state: "Telangana",
   },
+  fullName: function () {
+    return (
+      "Full name of the user is" +
+      " " +
+      this.name +
+      " " +
+      "and age is" +
+      " " +
+      this.age
+    );
+  },
 };
-console.log(obj.name, obj.address.street);
+obj.email = "test@email";
+console.log(obj.fullName(), obj["email"]);
