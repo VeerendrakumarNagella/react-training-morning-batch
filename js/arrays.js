@@ -36,7 +36,13 @@ const isEvery = d.every((val) => val % 10 === 0);
 
 console.log(isEvery);
 
-const filItems = d.filter((val) => val % 10 === 0);
+// const filItems = d.filter((val) => val % 10 === 0);
+const filItems = d.filter((val) => {
+  if (val % 10 === 0) {
+    return true;
+  }
+  return false;
+});
 
 console.log(filItems);
 
