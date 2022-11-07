@@ -1,3 +1,3 @@
 const a = "100";
 
-console.log(typeof Number(a));
+// console.log(typeof Number(a));
