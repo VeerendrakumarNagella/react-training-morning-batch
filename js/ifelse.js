@@ -2,7 +2,7 @@
 
 // simple if
 
-const age = 18;
+const age = 18;                       
 
 if (age >= 18) {
   console.log("Major");
@@ -59,7 +59,7 @@ const b = 20;
 const c = 14;
 
 if (a > b) {
-  if (a > c) {
+  if (a > c) {   
     console.log("A is big");
   } else {
     console.log("C is big");
