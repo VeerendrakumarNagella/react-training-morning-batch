@@ -2,7 +2,7 @@ const userName = "Test User";
 
 // userName = "testt";
 
-console.log(userName);
+// console.log(userName);
 
 const arr = [1, 2, 3, 4];
 
