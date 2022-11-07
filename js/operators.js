@@ -10,4 +10,4 @@ const d = a + b;
 
 console.log(a, b, c, d); // 30, 30, 50, 60
 
-console.log(0.2 + 0.3 === 0.5);
+// console.log(0.2 + 0.3 === 0.5);
