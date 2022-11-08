@@ -69,8 +69,36 @@ const userDetails = {
   age: 28,
   gender: "Male",
   city: "Hyderabad",
+  name: "test",
 };
 
+console.log(userDetails);
+
+const propArr = [];
+const valueArr = [];
+
 for (const key in userDetails) {
-  console.log(`The user ${key}: ${userDetails[key]}, `);
+  propArr.push(key);
+  valueArr.push(userDetails[key]);
 }
+
+const propArr1 = Object.keys(userDetails);
+const valueArr1 = Object.values(userDetails);
+console.log(propArr, propArr1, valueArr, valueArr1);
+
+// for (const key in userDetails) {
+//   console.log(`The user ${key}: ${userDetails[key]}, `);
+// }
+
+// how to reomve duplicate values in an array
+
+const duplicateArr = [4, 2, 3, 6, 2, 3, 4, 3, 4, 6, 3, 6, 7, 8, 1, 2];
+const newArr = [];
+
+for (let i = 0; i < duplicateArr.length; i++) {
+  if (!newArr.includes(duplicateArr[i])) {
+    newArr.push(duplicateArr[i]);
+  }
+}
+
+console.log([...new Set(duplicateArr)], newArr);

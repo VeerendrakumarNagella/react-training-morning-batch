@@ -29,3 +29,23 @@ console.log(nameConventionChange(name2));
  * -12 -11 -10   -9   -8   -7   -6   -5   -4   -3   -2   -1
  *
  * */
+
+// Palindrome
+const isPalindromeValidate = (str) => {
+  if (str.charAt(0) !== str.charAt(str.length - 1)) {
+    return false;
+  }
+  return str === str.split("").reverse().join("");
+};
+console.log(isPalindromeValidate("racecar"));
+console.log(isPalindromeValidate("racecara"));
+console.log(isPalindromeValidate("abcba"));
+
+// Anagram
+
+const isAnagram = (str1, str2) => {
+  return str1.split("").sort().join("") === str2.split("").sort().join("");
+};
+console.log(isAnagram("veerendra", "reedrvean"));
+console.log(isAnagram("veerendra", "reedrvban"));
+console.log(isAnagram("veerendra", "gattsasdas"));
