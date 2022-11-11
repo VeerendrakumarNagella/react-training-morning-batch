@@ -1,0 +1,11 @@
+{
+  "userDetails": {
+    "userName": "Test",
+    "age": 28,
+    "isIndian": true,
+    "address": {
+      "street": "3rd line",
+      "city": "Hyderabad"
+    }
+  }
+}
