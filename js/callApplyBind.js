@@ -40,3 +40,19 @@ const hocFunc = (num) => {
 };
 
 console.log(hof(hocFunc)(4));
+
+const obj = {
+  firstName: "Veerendra",
+  lastName: "Nagella",
+  fullName: function () {
+    return `My name is ${this.firstName} ${this.lastName}`;
+  },
+};
+
+function getDetails(city, company) {
+  return this.firstName + " " + this.lastName + " " + city + " " + company;
+}
+
+console.log(getDetails.call(obj, "Hyd", "Carelon"));
+console.log(getDetails.apply(obj, ["Hyd", "Carelon"]));
+console.log(getDetails.bind(obj, "Hyd", "Carelon")());
