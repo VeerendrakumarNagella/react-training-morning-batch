@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 7px 13px;
+      }
+
+      th {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br>
+    <input type="search" id="search_ele" placeholder="Search Element">
+    &nbsp;
+    <button id="search_btn"> Search </button>
+    <h2>Users Table</h2>
+    <table id="user-table">
+      <thead>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+
+    <br>
+
+    <!-- <button onclick="handleDelete()">Delete 5</button> -->
+    <button id="delete_btn">Delete 5</button>
+
+    <script>
+      const userArr = [
+        { id: 1, name: "Sesha", city: "Hyderabad" },
+        { id: 2, name: "Rajesh", city: "Hyderabad" },
+        { id: 3, name: "Srikanth", city: "Hyderabad" },
+        { id: 4, name: "Shiva", city: "Hyderabad" },
+        { id: 5, name: "Narendra", city: "Hyderabad" },
+        { id: 6, name: "Ramu", city: "Hyderabad" },
+        { id: 7, name: "Kiran", city: "Hyderabad" },
+        { id: 8, name: "Pavan", city: "Hyderabad" },
+      ];
+
+      const propArr = [];
+
+      for (const key in userArr[0]) {
+        propArr.push(key);
+      }
+
+      const theadEle = document.querySelector("thead");
+      const tbodyEle = document.querySelector("tbody");
+
+      let headEle = '';
+      for (let i = 0; i < propArr.length; i++) {
+        headEle = headEle + '<th>' + propArr[i] + '</th>';
+        theadEle.innerHTML = headEle;
+      }
+
+      const rowDataFormation = (arr) => {
+        if (arr.length) {
+          let rowEle = "";
+
+          for (let i = 0; i < arr.length; i++) {
+            const { id, name, city } = arr[i];
+            rowEle = rowEle + '<tr>' + '<td>' + id + '</td>' + '<td>' + name + '</td>' + '<td>' + city + '</td>' + '</tr>'
+            tbodyEle.innerHTML = rowEle;
+          }
+        }
+        else {
+          tbodyEle.innerHTML = "Data not found";
+        }
+      }
+      rowDataFormation(userArr);
+
+
+
+      // const handleDelete = () => {
+      //   userArr.splice(4, 1);
+      //   rowDataFormation();
+      // }
+
+      const btnEle = document.getElementById('delete_btn');
+      // btnEle.onclick = () => {
+      //   userArr.splice(4, 1);
+      //   rowDataFormation();
+      // }
+
+      // btnEle.addEventListener('click',  handleDelete)
+
+      btnEle.addEventListener('click', () => {
+        userArr.splice(4, 1);
+        rowDataFormation(userArr);
+      })
+
+      btnEle.style.color = "red";
+      btnEle.style.backgroundColor = 'white';
+      btnEle.style.border = '1px solid red';
+      btnEle.style.padding = '7px 15px';
+      btnEle.setAttribute('class', 'btn-primary');
+
+
+      // Element search functionality
+      const searchBtn = document.getElementById('search_btn');
+
+      const handleSearch = () => {
+        const searchval = document.getElementById('search_ele').value;
+        const filteredItems = userArr.filter(user => user.name.toLowerCase().trim().includes(searchval.toLowerCase().trim()))
+        rowDataFormation(filteredItems)
+      }
+      searchBtn.addEventListener('click', handleSearch);
+
+      // for (let i = 0; i < propArr.length; i++) {
+      //   const element = propArr[i];
+      //   const childEle = document.createElement("th");
+      //   const textNode = document.createTextNode(element);
+      //   childEle.appendChild(textNode);
+      //   theadEle.appendChild(childEle)
+      // }
+
+      // for (let i = 0; i < userArr.length; i++) {
+      //   const element = userArr[i];
+      //   const rowEle = document.createElement("tr");
+      //   const childEle1 = document.createElement("td");
+      //   const childEle2 = document.createElement("td");
+      //   const childEle3 = document.createElement("td");
+      //   const textNodeId = document.createTextNode(element.id);
+      //   const textNodeName = document.createTextNode(element.name);
+      //   const textNodeCity = document.createTextNode(element.city);
+      //   childEle1.appendChild(textNodeId);
+      //   childEle2.appendChild(textNodeName);
+      //   childEle3.appendChild(textNodeCity);
+      //   rowEle.appendChild(childEle1);
+      //   rowEle.appendChild(childEle2);
+      //   rowEle.appendChild(childEle3);
+
+      //   tbodyEle.appendChild(rowEle)
+      // }
+
+
+
+    </script>
+  </body>
+
+</html>
