@@ -98,3 +98,9 @@ switch (day) {
   default:
     console.log("Saturday");
 }
+
+function myFunction(a) {
+  let power = 10;
+  return;
+  a * power;
+}
