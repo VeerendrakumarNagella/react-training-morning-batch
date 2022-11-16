@@ -56,35 +56,22 @@ for (let i = 1; i <= starLength; i++) {
   console.log("* ".repeat(i));
 }
 
+let starslength = 5;
+for (let i = 0; i <= starslength; i++) {
+  console.log("* ".repeat(i));
+}
+
 for (let i = 1; i <= starLength; i++) {
   console.log(" ".repeat(starLength - i) + "* ".repeat(i));
+}
+let starlength = 5;
+for (let i = 1; i <= starlength; i++) {
+  console.log(" ".repeat(starlength - i) + "* ".repeat(i));
 }
 
 for (let i = starLength; i >= 1; i--) {
   console.log(" ".repeat(starLength - i) + "* ".repeat(i));
 }
-
-const userDetails = {
-  name: "Veerendra",
-  age: 28,
-  gender: "Male",
-  city: "Hyderabad",
-  name: "test",
-};
-
-console.log(userDetails);
-
-const propArr = [];
-const valueArr = [];
-
-for (const key in userDetails) {
-  propArr.push(key);
-  valueArr.push(userDetails[key]);
-}
-
-const propArr1 = Object.keys(userDetails);
-const valueArr1 = Object.values(userDetails);
-console.log(propArr, propArr1, valueArr, valueArr1);
 
 // for (const key in userDetails) {
 //   console.log(`The user ${key}: ${userDetails[key]}, `);
@@ -102,3 +89,10 @@ for (let i = 0; i < duplicateArr.length; i++) {
 }
 
 console.log([...new Set(duplicateArr)], newArr);
+
+const numberss = [2, 2, 2, 4, 4, 6, 6, 7, 7, 1, 5, 9, 9];
+const newarr1 = [];
+console.log([...new Set(numberss)], newarr1);
+
+const arr23 = [1, 1, 2, 3, 3, 4, 4, 5, 5, 6, 6];
+const arr25 = console.log([...new Set(arr23)]);

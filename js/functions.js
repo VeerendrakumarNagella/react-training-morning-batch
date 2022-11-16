@@ -30,3 +30,12 @@ console.log(add(10, 20));
 sub(20, 10);
 console.log(mul());
 div();
+
+let name = "      seshadri      ";
+let name1 = "     Devarapu      ";
+
+const namechanges = (add) => {
+  return add.trim().toUpperCase().length;
+};
+console.log(namechanges(name));
+console.log(namechanges(name1));

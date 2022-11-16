@@ -254,20 +254,6 @@ const mapUsersData = usersData.map((user) => {
   return newUser;
 });
 
-const forEachArr = [];
-usersData.forEach((user) => {
-  const { id, name, username, email } = user;
-  const newUser = {
-    id,
-    name,
-    username,
-    email,
-  };
-  forEachArr.push(newUser);
-});
-
-console.log(mapUsersData, forEachArr);
-
 const duplicateArr = [4, 2, 3, 6, 2, 3, 4, 3, 4, 6, 3, 6, 7, 8, 1, 2];
 
 let count = 0;
@@ -281,3 +267,17 @@ for (let i = 0; i < duplicateArr.length; i++) {
 
 const totalVal = duplicateArr.reduce((acc, currentVal) => acc + currentVal);
 console.log(count, count1, totalVal);
+
+const duplicatedigits = [
+  1, 1, 2, 2, 4, 4, 5, 5, 7, 7, 4, 7, 7, 9, 9, 8, 8, 3, 6,
+];
+let count2 = 0;
+let count3 = o;
+duplicatedigits.forEach((val) => (count2 = count + val));
+for (let i = 0; i < duplicatedigits.length; i++) {
+  count3 += duplicatedigits[i];
+}
+const totalval = duplicatedigits.reduce((acc, currentval) => acc + currentval);
+console.log(count2, count3, totalval);
+
+const duplinumbers = [1, 1, 2, 2, 2, 3, 3, 5, , 6, 6, 7, 7, 8, 8, 4, 7, 9];
