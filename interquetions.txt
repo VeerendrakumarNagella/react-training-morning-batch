@@ -1,0 +1,147 @@
+HTML:
+What is html ? 
+What is DOCTYPE in html ? 
+html5 features ? 
+Semantic elements ? 
+inline vs block level elements ? 
+div / span, em / i, strong / b ? 
+input types ? 
+form elements ? 
+HTML5 api's ? 
+canvas vs svg ? 
+iframe ? 
+input disabled / readonly ? 
+meta tags ? 
+a tag attributes and it useages? 
+relative vs absolute path?
+SEO and accesability ?
+
+CSS:
+types of css ?
+flexbox ?
+boxmodel ?
+specificity ?
+opacity ?
+visibility hidden vs dissplay none ?
+positions and relative vs absolute ?
+pseudo classes and pseudo elements ?
+selectors ?
+media queries ?
+how to align child element center to the parent element ?
+z-index ?
+diff b/t padding, margin ?
+viewport height and viewport width ?
+rounded corners ?
+box sizinng ?
+animations ?
+simple 4 X 4 layout grid With header and footer ?
+
+JS:
+JavaScript ?
+ECMA script ?
+es6 features ?
+diff b/t var, let and const ?
+advantages of arrow functions ?
+js hoisting ?
+clousures ?
+higher order functions ?
+spread operartor and rets parameters ?
+object detrcturing ?
+map, filter, reducer, forEach ?
+pure functions ?
+data types ?
+type of null ?
+array, object, string methods ?
+call, apply, bind ?
+== , === difference ?
+settimeout vs setinterval ?
+JavaScript life cycle ?
+eventloop ?
+async calls in js ?
+promises ?
+async and await ?
+callbacks, promises, async and await ?
+this in js ?
+prototypes ?
+class ?
+oops ?
+event listners ?
+event bubbling vs event capturing ?
+recognize of an array ?
+some vs find vs filter ?
+Nan ?
+error handling ?
+ternary operator ?
+object literals ?
+
+React:
+react ?
+library vs framework ?
+jsx ?
+babel, webpack ?
+virtual dom, shadow dom ?
+diffing algorithm and recoincilation ?
+error boundarie ?
+usage of keys ?
+state vs props ?
+life cycle hooks ?
+react hooks ?
+container vs preentational, class vs functional, pure vs impure, controlled vs uncontrolled components?
+how to stop re rendering in react ?
+context api ?
+how to pass data between the components ?
+props drilling and how to avoid?
+router ?
+how to call api's in react, fetch and axios ?
+lazy loading, code splitting ?
+higher order components ?
+typescript ?
+react fragments ?
+compoition vs inheritance ?
+Forwarding Refs ?
+Optimizing Performance ?
+Profiler ?
+Render Props ?
+SyntheticEvent ?
+usestate, useeffect, usecallback, usememo, useref ?
+memoization ?
+custom hooks ?
+authentication ?
+unit testing ?
+
+Redux: 
+Redux ?
+redux flow ?
+Store ?
+mapstatetoprops, mapdistachprops ?
+what is redux middleware and uses?
+redux thunk ?
+redux sagas ?
+connect ?
+reselect ?
+
+general:
+which methodology ? 
+jira ?
+sprint ?
+git ?
+recent project ?
+biggest challenge ?
+
+coding:
+flexbox layout,
+center align of child element
+media queries 
+promises
+call, apply, bind 
+map, filter, reduce, foreach, split, join, find, some, every, indexof, includes
+counter app
+task app
+simple signup form
+usememo, usecallback
+higher order component
+call api and display the data in table or list format
+create simple context api 
+error boundary component
+Forwarding Refs
+data pass from child to parent 
